@@ -1,4 +1,7 @@
-  function showScreen(id) {
+import { Player } from './data.js';
+  //central javascript code  
+
+  function showScreen(id) { //manages the visibility of screens
     document.querySelectorAll('.screen').forEach(div => div.classList.add('hidden'));
     document.getElementById(id).classList.remove('hidden');
   }
@@ -26,3 +29,5 @@
   window.onload = () => {
     updateStatsUI();
   };
+
+  const player = new Player();
