@@ -1,14 +1,3 @@
-let player = {
-    name: "Hero",
-    level: 1,
-    xp: 0,
-    xptonext: 10,
-    attack: 2,
-    defense: 1,
-    health: 100,
-    materials: 0
-  };
-  
   function showScreen(id) {
     document.querySelectorAll('.screen').forEach(div => div.classList.add('hidden'));
     document.getElementById(id).classList.remove('hidden');
