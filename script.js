@@ -4,11 +4,11 @@
   }
   function useRecipe(name) {
     if (name === 'Spicy Curry') {
-      attack += 2;
+      Player.attack = Player.attack + 2;
     } else if (name === 'Garlic Bread') {
-      defense += 2;
+      Player.defense = Player.defense + 2;
     } else if (name === 'Healing Stew') {
-      health += 10;
+      Player.health = Player.health + 2;
     }
     updateStatsUI();
   }
