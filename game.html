@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Dungeon Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Recipe Dungeon Game</h1>
+
+    <!-- Screens -->
+    <div id="statsScreen" class="screen">
+      <h2>Character Stats</h2>
+      <p>Attack: <span id="attack">0</span></p>
+      <p>Defense: <span id="defense">0</span></p>
+      <p>Health: <span id="health">100</span></p>
+    </div>
+
+    <div id="dungeonScreen" class="screen hidden">
+      <h2>Choose a Dungeon</h2>
+      <button onclick="fightDungeon('Goblin')">Goblin Cave</button>
+      <button onclick="fightDungeon('Dragon')">Dragon Lair</button>
+      <div id="battleResult"></div>
+    </div>
+
+    <div id="cookingScreen" class="screen hidden">
+      <h2>Prebuilt Recipes</h2>
+      <button onclick="useRecipe('Spicy Curry')">Spicy Curry</button>
+      <button onclick="useRecipe('Garlic Bread')">Garlic Bread</button>
+      <button onclick="useRecipe('Healing Stew')">Healing Stew</button>
+    </div>
+  </div>
+
+  <!-- Bottom Nav -->
+  <div class="bottom-nav">
+    <button onclick="showScreen('statsScreen')">Stats</button>
+    <button onclick="showScreen('dungeonScreen')">Dungeon</button>
+    <button onclick="showScreen('cookingScreen')">Cook</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
