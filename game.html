@@ -15,6 +15,7 @@
             <!-- Screens -->
             <div id="statsScreen" class="screen">
                 <h2>Character Stats</h2>
+                <p>Name: <span id="name">Name</span></p>
                 <p>Level: <span id="stat-level">1</span></p>
                 <p>XP: <span id="stat-xp">0</span>/ <span id="stat-xpnext">10</span></p>
                 <p>Attack: <span id="stat-attack">2</span></p>
@@ -25,8 +26,12 @@
       
             <div id="dungeonScreen" class="screen hidden">
                 <h2>Choose a Dungeon</h2>
-                <button onclick="fightDungeon('Goblin')">Goblin Cave</button>
-                <button onclick="fightDungeon('Dragon')">Dragon Lair</button>
+                <button onclick="fightDungeon('Grain')">Grain</button>
+                <button onclick="fightDungeon('Meat')">Meat</button>
+                <button onclick="fightDungeon('Dairy')">Dairy</button>
+                <button onclick="fightDungeon('Vegetable')">Veggie</button>
+                <button onclick="fightDungeon('Fruit')">Fruit</button>
+                <button onclick="fightDungeon('Dessert')">Dessert</button>
                 <div id="battleResult"></div>
             </div>
       
@@ -45,5 +50,8 @@
             <button onclick="showScreen('cookingScreen')">Cook</button>
         </div>
     </body>
+    <script>
+        updateStatsUI();
+    </script>
 </html>
       

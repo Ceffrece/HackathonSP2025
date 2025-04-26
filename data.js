@@ -1,6 +1,7 @@
 //holds the classes
+let playerName = localStorage.getItem("userName") || "Hero";
 let Player = {
-    name: "Hero",
+    name: playerName,
     level: 1,
     vegetableEXP: 0,
     fruitEXP: 0,

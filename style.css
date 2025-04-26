@@ -7,42 +7,59 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.container {
+  }
+  
+  .container {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
-}
-h1 {
+  }
+  
+  h1 {
     text-align: center;
-}
-button {
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label, input, button {
+    margin-bottom: 10px;
+  }
+  
+  button {
     background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 4px;
-}
-button:hover {
+  }
+  
+  button:hover {
     background-color: #45a049;
-}
-#characterStats {
+  }
+  
+  #characterStats {
     margin-top: 20px;
-}  
-#battleResult {
+  }
+  
+  #battleResult {
     margin-top: 20px;
     font-weight: bold;
-}
-.hidden {
+  }
+  .hidden {
     display: none;
-}
-.screen {
+  }
+  
+  .screen {
     margin-top: 20px;
-}
-.bottom-nav {
+  }
+  
+  .bottom-nav {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -51,8 +68,9 @@ button:hover {
     justify-content: space-around;
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-}
-.bottom-nav button {
+  }
+  
+  .bottom-nav button {
     flex: 1;
     padding: 10px;
     border: none;
@@ -61,7 +79,9 @@ button:hover {
     font-weight: bold;
     cursor: pointer;
     border-radius: 0;
-} 
-.bottom-nav button:hover {
+  }
+  
+  .bottom-nav button:hover {
     background-color: #45a049;
-}
+  }
+  

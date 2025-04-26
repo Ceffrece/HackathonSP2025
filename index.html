@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="data.js"></script>
 
     
    <!-- <button type="button">Click Me</button> this is a placeholder button-->
@@ -75,8 +76,9 @@
     nameButton.addEventListener("click", function() {
         const nameInput = document.getElementById("nameInput");
         const userName = nameInput.value;
-
+        
         if (userName.trim() !== "") {
+            setUserName(userName)
             // Store the name in localStorage
             localStorage.setItem("userName", userName);
              // Redirect to the other HTML page
@@ -87,8 +89,5 @@
     });
 </script>
 </body>
-
-
-
 </head>
 
